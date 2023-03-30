@@ -1,0 +1,24 @@
+[package]
+name = "user-group"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "user_group"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+dev = []
+
+[dependencies]
+anchor-lang = { version = "0.24.2" }
+anchor-spl = "0.24.2"
+borsh = "0.9.1"
+solana-security-txt = "0.1.5"
+spl-token = "3.3.0"

@@ -1,0 +1,12 @@
+[programs.localnet]
+user_group = "9fAvfoKEWUUSRmDvfeVoZ1HXKGDnkUB8rguYUMeUcs6W"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/user-group.ts"
